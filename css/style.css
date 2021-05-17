@@ -497,6 +497,52 @@ text-transform: uppercase;
   text-align: center;
 }
 /**************gettoknow element end*************/
+.form-box{
+  width: 500px;
+	height: 450px;
+	text-align: center;
+	margin: 0 auto;
+  border-radius: 30px 0 40px 0;
+	background-color: rgba(44, 62, 80,0.8);
+	margin-top: 160px;
+  background-origin: solid #000 1px;
+  
+}
+.form-box .btn-login{
+	padding: 15px 25px;
+	border: none;
+  border-radius: 10px 0 10px 0;
+	background-color: #fa6019;
+	color: #fff;
+}
+.loginbodu{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./../images/loginback.jpg);
+}
+.form-box label{
+  color: #fff;
+}
+.form-box img{
+  width: 150px;
+	height: 150px;
+	margin-top: -60px;
+  border-radius: 75px;
+}
+.form-box input[type="text"],input[type="password"]{
+	margin-top: 30px;
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	padding-left: 40px;
+  outline: 0;
+  border: none;
+}
 /**************wearemanage element start*************/
 .wearemanage{
   position: relative;
@@ -1091,12 +1137,165 @@ color:#fc842e;
 font-weight: bold!important;
 }
 /**************footer element end*************/
+/**************project detail page element start*************/
+.project-detail-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(189, 182, 182, 0.397), #fc842e);
+  opacity: 0.8;
+  z-index: 1;
+}
+.project-detail-header{
+  position: relative;
+  background-image: url(./../images/propertity.jpg);
+  height: 70vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  padding: 0%!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.margin{
+  transform: translateY(100px);
+}
+.project-detail-header h1{
+text-transform: uppercase;
+font-size: 40px;
+font-weight: bolder;
+transform: translateY(100px);
+}
+.project-detail-header h2{
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: bolder;
+  }
+.redefine-sectin{
+  position: relative;
+  height:auto;
+}
+.redefinepadding{
+  padding: 0 130px!important;
+}
+.redefinepadding img{
+  height: 100%;
+  width: 100%;
+}
+.repadding{
+  padding: 0%!important;
+  margin: 0%!important;
+}
+.redifinedesc{
+  padding-top: 25px;
+}
+.redifinedesc h1{
+  color:#fc842e;
+  font-size:25px;
+  font-weight:700;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.redifinedesc p{
+  text-align: justify;
+  font-size: 13px;
+}
+.redifinedesc1{
+  padding-top: 25px;
+  text-align: right;
+}
+.redifinedesc1 h1{
+  color:#fc842e;
+  font-size:25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  
+}
+.redifinedesc1 p{
+  text-align: justify;
+  font-size: 13px;
+}
+.features-img{
+  width: 100%;
+  height: 20vh;
+  background-color:#fc842e;
+}
+.features-img img{
+  height: 100%;
+  width: 100%;
+}
+/**************Galary page element start*************/
+.galary-section{
+  height: auto;
+  width: 100%;
+}
+.galary-section img{
+height: 100%;
+width: 100%;
+}
+.galarypadding{
+padding: 5px 2px!important;
+}
+/**************Galary page element ed*************/
+/**************pricing page element ed*************/
+.pricing-section{
+  height: auto;
+  background-color: #cfcfd4;
+  width: 100%;
 
+}.pricing-section h1{
+   font-size: 24px;
+   padding: 30px 0 10px 0;
+  
+  }
+  .pricing .hradd::after{
+    content: '';
+    width: 260px;
+    margin: 0 auto;
+    display: block;
+    height: 1px;
+    background: #000;
+  }
+  .pricing{
+    text-align: center;
+    
+  }
+  .pricing h2{
+    padding: 10px 0;
+     font-size: 20px;
+     color: #fa6019;
+   }
+   .pricing span{
+     color: #000;
+     font-size: 20px;
+     font-weight: bolder;
+   }
+   .pricing h3{
+    font-size: 15px;
+    color: #5a5252;
+   }
+  .payment{
+    text-align: center;
+  }
+  .payment h3{
+    font-size: 15px;
+    color: #5a5252;
+  }
+.payment h1{
+  color: #fa6019;
+  font-size: 24px;
+}
+/**************pricing page element ed*************/
+/**************project detail page element end*************/
 /**************project page element start*************/
 .project-header{
 position: relative;
 background-image: url(./../images/propertity.jpg);
-height: 100vh;
+height: 60vh;
 min-height: 25rem;
 width: 100%;
 overflow: hidden;
@@ -1108,7 +1307,7 @@ background-size: cover;
 .project-heading h1{
 text-transform: uppercase;
 
-transform: translateY(150px);
+transform: translateY(80px);
 }
 
 .project-section1{
