@@ -995,7 +995,7 @@ height: 1px;
 position: absolute;
 left: 0;
 z-index: 1;
-background-color:#000;;
+background-color:#000;
 }
 /**************section4 element end*************/
 /**************section5 element start*************/
@@ -1246,6 +1246,7 @@ padding: 5px 2px!important;
   height: auto;
   background-color: #cfcfd4;
   width: 100%;
+  padding-bottom: 20px;
 
 }.pricing-section h1{
    font-size: 24px;
@@ -1269,6 +1270,10 @@ padding: 5px 2px!important;
      font-size: 20px;
      color: #fa6019;
    }
+   .pricing .price-detail h3{
+    font-size: 14px!important;
+    color: #5a5252;
+   }
    .pricing span{
      color: #000;
      font-size: 20px;
@@ -1278,18 +1283,82 @@ padding: 5px 2px!important;
     font-size: 15px;
     color: #5a5252;
    }
-  .payment{
-    text-align: center;
-  }
-  .payment h3{
-    font-size: 15px;
+   .payment {
+     text-align: center;
+   }
+  .payment p{
+    font-size: 13px;
     color: #5a5252;
+    
   }
 .payment h1{
   color: #fa6019;
   font-size: 24px;
+  text-align: center;
 }
-/**************pricing page element ed*************/
+.payment-detail p{
+  text-align: justify; padding-left: 80px;
+}
+/**************pricing page element end*************/
+/**************choose-section page element start*************/
+.choose-section{
+  width: 100%;
+  height: auto;
+  background-color:#fc842e;
+  padding: 50px 0 40px 0;
+}
+.choose-section h1{
+  background-image:linear-gradient(to right, #fc700d , #fc842e);
+border-left: #fff solid 3px;
+color: #fff;
+padding: 10px 15px 10px 15px;
+font-size: 25px;
+margin-bottom: 10px;
+}
+.choose-section p{
+  color: #fff;
+  text-align: justify;
+}
+/**************choose-section page element end*************/
+/**************description page element end*************/
+.description-section{
+height: auto;
+width: 100%;
+padding: 30px 0 40px 0;
+}
+.description-section .desc{
+color: #fc842e;
+font-size: 20px;
+}
+.description-section .descp{
+text-align: left;
+font-size: 14px;
+}
+.proper-detail-box h1{
+color: #000;
+font-size: 20px;
+padding: 20px 0;
+}
+.proper-detail-box span{
+  color: #fc842e;
+  font-size: 15px;
+}
+.proper-detail-box p{
+  line-height: 8px;
+}
+#thankyousection{
+
+  background-color:#fc842e;
+  
+}
+
+.thanks-heading h1{
+  font-size: 24px;
+  color: #fff;
+  
+}
+
+/**************description page element end*************/
 /**************project detail page element end*************/
 /**************project page element start*************/
 .project-header{

@@ -184,9 +184,7 @@ if ($conn -> connect_errno) {
                   <div class="payment">
                   <h1 >Payment Plan</h1>
                     <div class="payment-detail">
-                        <h3>10% upon Bookig </h2>
-                        <h3>40% Under Construction </h2>
-                        <h3>50% upon HandOver </h2>
+                        <p>10% upon Bookig <br>40% Under Construction<br>50% upon HandOver</p>
                     </div>
                   </div>
                 </div>
@@ -209,6 +207,52 @@ if ($conn -> connect_errno) {
         </div>
     </section>
     <!--************end pricing***************-->
+      <!--************start choose us***************-->
+    <section class="choose-section">
+       <div class="container redefinepadding">
+           <h1 class="">Why you choose us for you Property?</h1>
+           <p>In publishing and graphic design, Lorem ipsum is a placeholder.</p>
+           <p>Striving for excellence, Homes 4 Life maintains the flexibility to adapt our business to the main needs of our valued clients in the evolving Real Estate marketplace. The highly qualified and professional teams of managers and sales consultants at Homes 4 Life are expertly trained to locate for you the right property that meets your expectations.</p>
+           <p>Striving for excellence, Homes 4 Life maintains the flexibility to adapt our business to the main needs of our valued clients in the evolving Real Estate marketplace. The highly qualified and professional teams of managers and sales consultants at Homes 4 Life are expertly trained to locate for you the right property that meets your expectations.</p>
+
+       </div>
+    </section>
+      <!--************end choose us***************-->
+       <!--************start Description section***************-->
+       <section class="description-section">
+       <div class="container redefinepadding">
+           <div class="row">
+               <div class="col-md-6 col-10 col-lg-6 offset-1 offset-lg-0 offset-md-0">
+                   <h1 class="desc"> Description</h1>
+                   <p class="descp"> Striving for excellence, Homes 4 Life maintains the flexibility to adapt our business to the main needs of our valued clients in the evolving Real Estate marketplace. The highly qualified and professional teams of managers and sales consultants at Homes 4 Life are expertly trained to locate for you the right property that meets your expectations.</p>
+               </div>
+               <div class="col-md-6 col-10 col-lg-6 offset-1 offset-lg-0 offset-md-0">
+               <div class="proper-detail-box">
+               <h1> Property Detail</h1>
+                   <p>Location: <span>Town Squar</span></p>
+                   <p>Approx size: <span>Town Squar</span></p>
+                   <p>Reference No: <span>Town Squar</span></p>
+                   <p class="pt-3"><i class="fas fa-bed"></i><span>3 Bed |</span><i class="fas fa-bath"></i><span>3 Bath</span></p>
+                   <p ><i class="fas fa-car"></i><span>2 Parking</span></p>
+               </div>
+               </div>
+           </div>
+       </div>
+       </section>
+        <!--************end Description section***************-->
+        <!-- <section id="thankyousection"> 
+            <div class="thanks-heading">
+            <h1 class="text-center">Thank You For Visit Our Project</h1>
+            </div>               
+        </section> -->
+        <section class="section4"id="thankyousection">
+        <div class="container text-center ">
+            <div class="heading1 thanks-heading">
+            <h1 class="text-center">Thank You For Visit Our Project</h1>
+            </div>
+        </div>
+
+    </section>
     <!--************start section5***************-->
     <section class="section5">
         <div class="container-fluid footer-body">
