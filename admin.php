@@ -175,6 +175,17 @@ if(isset($_POST['submit']))
     $BathNo=$_POST['BathNo'];
     $ParkingNo=$_POST['ParkingNo'];
     $PropertyDesc=$_POST['PropertyDesc']; 
+
+    //new add
+    $SubHeading1=$_POST['SubHeading1'];
+    $SubHeading2=$_POST['SubHeading2'];
+    $BedNo2=$_POST['BedNo2'];
+    $2BedSize=$_POST['2BedSize'];
+    $2BedPrice=$_POST['2BedPrice'];
+    $BedNo3=$_POST['BedNo3'];
+    $BedNo3=$_POST['BedNo3'];
+    $3BedPrice=$_POST['3BedPrice'];
+    
     // if(!empty($Name) && !empty($Category) &&!empty($Category) && !empty($Heading1Img) && !empty($Heading2Img) && !empty($FeaturesImg) && !empty($SubTitle) && !empty($Size) && !empty($Price) && !empty($Heading1) && !empty($Heading2) && !empty($Heading1Desc) && !empty($Heading2Desc) && !empty($PropertyLocation) && !empty($PropertySize) && !empty($ReferenceNo) && !empty($PermitNo) && !empty($BedNo) && !empty($BathNo) && !empty($ParkingNo) && !empty($PropertyDesc) )
     // {
 
