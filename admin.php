@@ -180,22 +180,23 @@ if(isset($_POST['submit']))
     $SubHeading1=$_POST['SubHeading1'];
     $SubHeading2=$_POST['SubHeading2'];
     $BedNo2=$_POST['BedNo2'];
-    $2BedSize=$_POST['2BedSize'];
-    $2BedPrice=$_POST['2BedPrice'];
+    $BedSize2=$_POST['BedSize2'];
+    $BedPrice2=$_POST['BedPrice2'];
     $BedNo3=$_POST['BedNo3'];
-    $BedNo3=$_POST['BedNo3'];
-    $3BedPrice=$_POST['3BedPrice'];
+    $BedSize3=$_POST['BedSize3'];
+    $BedPrice3=$_POST['BedPrice3'];
     
     // if(!empty($Name) && !empty($Category) &&!empty($Category) && !empty($Heading1Img) && !empty($Heading2Img) && !empty($FeaturesImg) && !empty($SubTitle) && !empty($Size) && !empty($Price) && !empty($Heading1) && !empty($Heading2) && !empty($Heading1Desc) && !empty($Heading2Desc) && !empty($PropertyLocation) && !empty($PropertySize) && !empty($ReferenceNo) && !empty($PermitNo) && !empty($BedNo) && !empty($BathNo) && !empty($ParkingNo) && !empty($PropertyDesc) )
     // {
 
     // } 
     $query="INSERT INTO projecct(Name,Category,SubTitle,Heading1,Heading2,Heading1Desc,Heading2Desc,PropertyLocation,PropertySize,ReferenceNo,PermitNo,BedNo,BathNo,ParkingNo,
-    PropertyDesc,Price,Size,Heading1Img,Heading2Img,FeaturesImg,Galary1,Galary2,Galary3,Galary4,Galary5,Galary6,Galary7,Galary8
-)
+    PropertyDesc,Price,Size,Heading1Img,Heading2Img,FeaturesImg,Galary1,Galary2,Galary3,Galary4,Galary5,Galary6,Galary7,Galary8,SubHeading1
+    ,SubHeading2,BedNo2,BedSize2,BedPrice2,BedNo3,BedSize3,BedPrice3)
      VALUE('$Name','$Category','$SubTitle','$Heading1','$Heading2','$Heading1Desc','$Heading2Desc','$PropertyLocation','$PropertySize',
      '$ReferenceNo','$PermitNo','$BedNo','$BathNo','$ParkingNo','$PropertyDesc','$Price','$Size',' $Heading1ImgDestination','$Heading2ImgDestination',' $FeaturesImgDestination','$Galary1Destination','$Galary2Destination','$Galary3Destination',
-     '$Galary4Destination','$Galary5Destination','$Galary6Destination','$Galary7Destination','$Galary8Destination')";
+     '$Galary4Destination','$Galary5Destination','$Galary6Destination','$Galary7Destination','$Galary8Destination','$SubHeading1',' $SubHeading2',
+     '$BedNo2','$BedSize2','$BedPrice2','$BedNo3','$BedSize3','$BedPrice3')";
      
      $createquery=mysqli_query($conn,$query);
      echo $createquery;
@@ -288,7 +289,62 @@ if(isset($_POST['submit']))
                                                 <input type="text"name="SubTitle" class="form-control">
                                             </div>
                                         </div>
-                                     
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>SubHeading1</label>
+                                                <input type="text"name="SubHeading1" class="form-control">
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>SubHeading2</label>
+                                                <input type="text"name="SubHeading2" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>BedNo2</label>
+                                                <input type="text"name="BedNo2" class="form-control">
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>BedSize2</label>
+                                                <input type="text"name="BedSize2" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>BedPrice2</label>
+                                                <input type="text" name="BedPrice2" class="form-control">
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>BedNo3</label>
+                                                <input type="text"name="BedNo3" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>BedSize3</label>
+                                                <input type="text"name="BedSize3" class="form-control">
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>BedPrice3</label>
+                                                <input type="text"name="BedPrice3" class="form-control">
+                                            </div>
+                                        </div>                                    
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
