@@ -5,10 +5,10 @@ if ($conn -> connect_errno) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
   exit();
 }
-
-    $query="select * from projecct";
+$id = $_GET["Id"];
+    $query="select * from projecct Where Id=$id ";
     $result=mysqli_query($conn,$query);
-
+    $res=mysqli_fetch_array($result)
 ?>
 <!------ Php code end ---------->
 <!DOCTYPE html>
@@ -89,33 +89,33 @@ if ($conn -> connect_errno) {
         <div class="container redefinepadding">
             <div class="row">
                 <div class="col-md-6 repadding">
-                    <img src="images/project3.jpg" alt="">
+                    <img src="<?php echo $res['Heading1Img'] ?>" alt="">
                 </div>
                 <div class="col-md-6">
                    <div class="redifinedesc">
-                    <h1>Demo</h1>
-                    <h1>Demo</h1>
-                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+                    <h1><?php echo $res['Heading1'] ?></h1>
+                    <h1><?php echo $res['SubHeading1'] ?></h1>
+                    <p><?php echo $res['Heading1Desc'] ?></p>
                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 ">
                    <div class="redifinedesc1">
-                   <h1>Grand Living</h1>
-                    <h1>At Its Best</h1>
-                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
-                   </div>
+                   <h1><?php echo $res['Heading2'] ?></h1>
+                    <h1><?php echo $res['SubHeading2'] ?></h1>
+                    <p><?php echo $res['Heading2Desc'] ?></p>
+                </div>
 
                 </div>
                 <div class="col-md-6 repadding">
-                    <img src="images/project3.jpg" alt="">
+                    <img src="<?php echo $res['Heading2Img'] ?>" alt="">
                 </div>
             </div>
         </div>
     </Section>
     <section class="features-img">
-        <!-- <img src="images/project4.jpg" alt=""> -->
+        <!-- <img src="<?php echo $res['FeaturesImg'] ?>" alt="">  -->
     </section>
     <!--************end redefine***************-->
     <!--************start galary***************-->
@@ -124,37 +124,37 @@ if ($conn -> connect_errno) {
             <h1 class="text-center">Galary</h1>
             <div class="row">
                 <div class="col-md-4 galarypadding">
-                    <img src="images/project1.jpg" alt="">
+                    <img src="<?php echo $res['Galary1'] ?>" alt="">
                 </div>
                 <div class="col-md-4 galarypadding">
-                    <img src="images/project2.jpg" alt="">
+                    <img src="<?php echo $res['Galary2'] ?>" alt="">
                 </div>
                 <div class="col-md-4 galarypadding">
-                    <img src="images/project3.jpg" alt="">
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-4 galarypadding">
-                    <img src="images/project1.jpg" alt="">
-                </div>
-                <div class="col-md-4 galarypadding">
-                    <img src="images/project2.jpg" alt="">
-                </div>
-                <div class="col-md-4 galarypadding">
-                    <img src="images/project3.jpg" alt="">
+                    <img src="<?php echo $res['Galary3'] ?>" alt="">
                 </div>
 
             </div>
             <div class="row">
                 <div class="col-md-4 galarypadding">
-                    <img src="images/project1.jpg" alt="">
+                    <img src="<?php echo $res['Galary4'] ?>" alt="">
                 </div>
                 <div class="col-md-4 galarypadding">
-                    <img src="images/project2.jpg" alt="">
+                    <img src="<?php echo $res['Galary5'] ?>" alt="">
                 </div>
                 <div class="col-md-4 galarypadding">
-                    <img src="images/project3.jpg" alt="">
+                    <img src="<?php echo $res['Galary6'] ?>" alt="">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4 galarypadding">
+                    <img src="<?php echo $res['Galary7'] ?>" alt="">
+                </div>
+                <div class="col-md-4 galarypadding">
+                    <img src="<?php echo $res['Galary8'] ?>" alt="">
+                </div>
+                <div class="col-md-4 galarypadding">
+                    <img src="<?php echo $res['Galary3'] ?>" alt="">
                 </div>
 
             </div>
@@ -171,12 +171,12 @@ if ($conn -> connect_errno) {
                    <h1>Price & Size Structure</h1>
                    </div>
                     <div class="price-detail">
-                        <h2>1 Bed Apartments</h2>
-                        <h3><span>></span>770 Sq.Ft <span>></span>from AED</h3>
-                        <h2>1 Bed Apartments</h2>
-                        <h3><span>></span>770 Sq.Ft <span>></span>from AED</h3>
-                        <h2>1 Bed Apartments</h2>
-                        <h3><span>></span>770 Sq.Ft <span>></span>from AED</h3>
+                        <h2><?php echo $res['BedNo'] ?> Bed Apartments</h2>
+                        <h3><span>></span><?php echo $res['Size'] ?> Sq.Ft <span>></span><?php echo $res['Price'] ?>from AED</h3>
+                        <h2><?php echo $res['BedNo2'] ?> Bed Apartments</h2>
+                        <h3><span>></span><?php echo $res['BedSize2'] ?> Sq.Ft <span>></span><?php echo $res['BedPrice2'] ?>from AED</h3>
+                        <h2><?php echo $res['BedNo3'] ?> Bed Apartments</h2>
+                        <h3><span>></span><?php echo $res['BedSize3'] ?> Sq.Ft <span>></span><?php echo $res['BedPrice3'] ?>from AED</h3>
                     </div>
                    </div>
                 </div>
@@ -194,12 +194,12 @@ if ($conn -> connect_errno) {
                    <h1>Price & Size Structure</h1>
                    </div>
                     <div class="price-detail">
-                        <h2>1 Bed Apartments</h2>
-                        <h3><span>></span>770 Sq.Ft <span>></span>from AED</h3>
-                        <h2>1 Bed Apartments</h2>
-                        <h3><span>></span>770 Sq.Ft <span>></span>from AED</h3>
-                        <h2>1 Bed Apartments</h2>
-                        <h3><span>></span>770 Sq.Ft <span>></span>from AED</h3>
+                        <h2><?php echo $res['BedNo'] ?> Bed Apartments</h2>
+                        <h3><span>></span><?php echo $res['Size'] ?> Sq.Ft <span>></span><?php echo $res['Price'] ?>from AED</h3>
+                        <h2><?php echo $res['BedNo2'] ?> Bed Apartments</h2>
+                        <h3><span>></span><?php echo $res['BedSize2'] ?> Sq.Ft <span>></span><?php echo $res['BedPrice2'] ?>from AED</h3>
+                        <h2><?php echo $res['BedNo3'] ?> Bed Apartments</h2>
+                        <h3><span>></span><?php echo $res['BedSize3'] ?> Sq.Ft <span>></span><?php echo $res['BedPrice3'] ?>from AED</h3>
                     </div>
                    </div>
                 </div>
@@ -222,18 +222,18 @@ if ($conn -> connect_errno) {
        <section class="description-section">
        <div class="container redefinepadding">
            <div class="row">
-               <div class="col-md-6 col-10 col-lg-6 offset-1 offset-lg-0 offset-md-0">
+               <div class="col-md-7 col-10 col-lg-7 offset-1 offset-lg-0 offset-md-0">
                    <h1 class="desc"> Description</h1>
                    <p class="descp"> Striving for excellence, Homes 4 Life maintains the flexibility to adapt our business to the main needs of our valued clients in the evolving Real Estate marketplace. The highly qualified and professional teams of managers and sales consultants at Homes 4 Life are expertly trained to locate for you the right property that meets your expectations.</p>
                </div>
-               <div class="col-md-6 col-10 col-lg-6 offset-1 offset-lg-0 offset-md-0">
+               <div class="col-md-5 col-10 col-lg-5 offset-1 offset-lg-0 offset-md-0">
                <div class="proper-detail-box">
                <h1> Property Detail</h1>
-                   <p>Location: <span>Town Squar</span></p>
-                   <p>Approx size: <span>Town Squar</span></p>
-                   <p>Reference No: <span>Town Squar</span></p>
-                   <p class="pt-3"><i class="fas fa-bed"></i><span>3 Bed |</span><i class="fas fa-bath"></i><span>3 Bath</span></p>
-                   <p ><i class="fas fa-car"></i><span>2 Parking</span></p>
+                   <p>Location: <span><?php echo $res['PropertyLocation'] ?></span></p>
+                   <p>Approx size: <span><?php echo $res['PropertySize'] ?></span></p>
+                   <p>Reference No: <span><?php echo $res['ReferenceNo'] ?></span></p>
+                   <p class="pt-3"><i class="fas fa-bed"></i><span><?php echo $res['BedNo3'] ?> Bed |</span><i class="fas fa-bath"></i><span><?php echo $res['BathNo'] ?> Bath</span></p>
+                   <p ><i class="fas fa-car"></i><span><?php echo $res['ParkingNo'] ?> Parking</span></p>
                </div>
                </div>
            </div>

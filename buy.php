@@ -5,8 +5,8 @@ if ($conn -> connect_errno) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
   exit();
 }
-
-    $query="select * from projecct";
+    $buy="Buy";
+    $query="select * from projecct Where Category='".$buy. "' ";
     $result=mysqli_query($conn,$query);
 ?>
 <!------ Php code end ---------->
@@ -77,7 +77,7 @@ if ($conn -> connect_errno) {
         <div class="overlay">
 
             <div class="container text-center project-heading">
-                <h1 class="heading text-center text-uppercase">All <span class="mddle">Project </span><span class="last">Heare</span> </h1>
+                <h1 class="heading text-center text-uppercase">Buy <span class="mddle">Project </span><span class="last">Heare</span> </h1>
             </div>
         </div>
         
