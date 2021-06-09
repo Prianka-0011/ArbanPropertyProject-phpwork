@@ -199,10 +199,10 @@ if(isset($_POST['submit']))
      '$BedNo2','$BedSize2','$BedPrice2','$BedNo3','$BedSize3','$BedPrice3')";
      
      $createquery=mysqli_query($conn,$query);
-     echo $createquery;
+     print_r $createquery;
      if($createquery)
      {
-         echo "Your Data has been successfully";
+        echo '<script>alert("Welcome to Geeks for Geeks")</script>';
          header('Location:admin.php');
      }
      else{
